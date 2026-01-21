@@ -36,5 +36,17 @@ class TestLibrary(unittest.TestCase):
         lib.return_book("B4")
         self.assertFalse(lib.books["B4"]["borrowed"])
 
+# ---------- Sprint 3 Tests ----------
+    def test_report_contains_header(self):
+        lib = Library()
+        report = lib.generate_report()
+        self.assertIn("BookID | Title | Author | Status", report)
+
+    def test_report_contains_book(self):
+        lib = Library()
+        lib.add_book("B5", "DBMS", "Korth")
+        report = lib.generate_report()
+        self.assertIn("B5", report)
+        
 if __name__ == "__main__":
     unittest.main()

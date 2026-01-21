@@ -6,5 +6,5 @@
 | US-2      | 1      | add_book()           | test_duplicate_book_id        | v0.1    |
 | US-3      | 2      | borrow_book()        | test_borrow_book              | v0.2    |
 | US-4      | 2      | return_book()        | test_return_book              | v0.2    |
-| US-5      | 3      |  |     |     |
+| US-5      | 3      | generate_report()    | test_report_contains_book     | v0.3    |
 
